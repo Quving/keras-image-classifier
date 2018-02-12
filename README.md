@@ -19,7 +19,7 @@ As mentioned in the description, the data are collected by myself using the [xbo
 #### Validation samples
 Each class has **200 validation samples**. They have been splitted up from the bunch of augmented samples.
 
-#### Test samples 
+#### Test samples
 Test samples are not involved in the training stage. They have been created for you to test the neural network if you don't believe in my working code snippets.
 
 ### Using a pre-trained network (here VGG16) (Achieved accuracy ~ 99%)
@@ -28,6 +28,11 @@ Test samples are not involved in the training stage. They have been created for 
 ___
 
 ## Usage
+
+### Before training:
+
+``` bash initialize.sh ```
+
 ##### Please keep in mind
 This repository does not provide the trained weights of the neural networks. Once the script's are executed, the model's structure and weights are exported as default into the the folder **models/**.
 
