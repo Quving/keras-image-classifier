@@ -11,6 +11,8 @@ use-vgg16/training
 **.jpg
 **.png
 **.zip
+**.npy
+**.h5p
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
