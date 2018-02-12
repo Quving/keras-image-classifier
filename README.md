@@ -10,7 +10,7 @@ ___
 ``` pip install -r requirements.txt ```
 ___
 ## Data set
-Download the samples the neural network was trained with can be obtained with folling command.
+Download the samples the neural network was trained with can be obtained with following command.
 
 ``` wget -O original_samples.zip http://nextcloud.quving.com/s/5B4zfnLSMXsa37R/download ```
 ### Training samples
