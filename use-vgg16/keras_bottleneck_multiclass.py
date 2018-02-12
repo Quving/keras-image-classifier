@@ -145,6 +145,7 @@ def train_top_model():
 
     # Persist history and model.
     save_history(history, history_path)
+    plot_loss(history)
     save_model(model, top_model_path)
 
     (eval_loss, eval_accuracy) = model.evaluate(
@@ -159,8 +160,8 @@ def plot_loss(history):
 
     # summarize history for accuracy
     plt.subplot(211)
-    plt.plot(history.history['acc'])
-    plt.plot(history.history['val_acc'])
+    plt.plot(history['acc'])
+    plt.plot(history['val_acc'])
     plt.title('model accuracy')
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
@@ -168,8 +169,8 @@ def plot_loss(history):
 
     # summarize history for loss
     plt.subplot(212)
-    plt.plot(history.history['loss'])
-    plt.plot(history.history['val_loss'])
+    plt.plot(history['loss'])
+    plt.plot(history['val_loss'])
     plt.title('model loss')
     plt.ylabel('loss')
     plt.xlabel('epoch')
@@ -194,4 +195,5 @@ def create_top_model(shape, num_classes):
 if __name__ == "__main__":
     save_bottlebeck_features()
     train_top_model()
-
+    history = pickle.load( open(history_path,"rb"))
+    plot_loss(history)
