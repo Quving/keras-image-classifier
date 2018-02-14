@@ -7,6 +7,11 @@ use-vgg16/bottleneck_features
 use-vgg16/models
 use-vgg16/class_indices
 use-vgg16/training
+from-scratch/bottleneck_features
+from-scratch/models
+from-scratch/class_indices
+from-scratch/training
+
 
 **.jpg
 **.png
