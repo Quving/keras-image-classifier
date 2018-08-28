@@ -47,9 +47,9 @@ def generate_data(source_dir, target_dir, number):
             if no_of_generated_samples % int(number) == 0:
                 break  # otherwise the generator would loop indefinitely
 
-    print "=== SUMMARY ==="
-    print "    ", len(files), "has been found."
-    print "    ", no_of_generated_samples, "has been generated and has been saved to", target_dir
+    print("=== SUMMARY ===")
+    print("    ", len(files), "has been found.")
+    print("    ", no_of_generated_samples, "has been generated and has been saved to", target_dir)
 
 
 if __name__ == "__main__":
